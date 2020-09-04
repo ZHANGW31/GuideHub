@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuideHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Body -->
+
+    <!-- The TODO's below are ordered in such a way to represent the website design we decided to go with.  Optionals are nice to haves, we will implement in the future.-->
+
+    <!-- DONE: Parallax implementation or JumboTron with image -->
+    <div class="jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">GuideHub
+        </h1>
+        <p class="lead">The community-driven site for people helping people!</p>
+      </div>
+    </div>
+    <!-- DONE: NavBar implementation from Bootstrap -->
+    <!-- DONE: Searchbar implementation from Bootstrap. -->
+    <!-- DONE: (OPTIONAL) Add filter by categories, and date descending/ascending options on the same line as the search bar. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <ul class="nav-item active">
+            <a class="nav-link" href="#">
+              <button class="btn btn-outline-success my-2 my-sm-0" id="home-btn">Home</button
+              ><span class="sr-only">(current)</span></a
+            >
+              </ul>
+          <ul class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><button class="btn btn-outline-success my-2 my-sm-0">
+                Account
+              </button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Already a member? Login here!</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">New User? Register here!</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"><button class="btn btn-outline-success my-2 my-sm-0">Guides</button>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Most Recently Published</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Oldest Publish</a>
+          </div>
+      </ul>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            id="search-id"
+            type="search"
+            placeholder="Try Searching!"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" id="button-id" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="nav-item active">
+          <a class="nav-link" href="../createguidepage/createguidepage.html">
+            <button class="btn btn-outline-success my-2 my-sm-0">Create Your Own Guide</button
+            ><span class="sr-only">(current)</span></a
+          >
+            </ul>
+      </div>
+    </nav>
+    <!-- GOOD FOR THURSDAY (TWEAK RESPONSIVENESS PRIOR TO DEPLOYMENT): div + container needed for the body of the card objects (This will be the container that will house all of the cards.) -->
+    <div class="card-container container-fluid">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+          <ul>
+            
+            <li><div class="card">
+              <img src="../assets/TechnologyPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Need help with technology?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/CarPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Vehicle issues?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/SchoolPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Stuck on a school topic?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/CookingPhoto.jpeg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Cooking to impress?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/AnimalPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Pet care information?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/SportsPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Sports strategies?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/HealthPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Knowledge on healthcare?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/SocialPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Up your social game?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+            <li><div class="card">
+              <img src="../assets/BabyPhoto.jpg" class="card-img-top" alt="card picture">
+              <div class="card-body">
+                <h5 class="card-title">Baby care assistance?</h5>
+                <hr></hr>
+                <a href="#"><button class="card-btn">Find your guide!</button></a>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col"></div>
+      </div>
+  </div>
+    <!-- TODO: pageination implementation for multiple pages of information. (the buttons with previous, 1,2,3, ... , 12, next etc etc) -->
+
+    <!-- TODO: bottom of the page Parallax effect / jumbotron. -->
+
+    <!-- TODO: Additional links plus information section. -->
+
+    <!-- TODO (OPTIONAL): add a button that scrolls the page back to the top that is static to the bottom right corner  -->
+
+    <!-- Scripts Below this comment!-->
+    <script src=" https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="mainpage.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

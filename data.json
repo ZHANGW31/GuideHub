@@ -1,0 +1,18 @@
+{
+  "id": "guide unique id",
+  "title": "guide title",
+  "description": "description",
+  "total ratings": 91,
+  "one star ratings": 1,
+  "imgurl": "something.com/png",
+  "comments": {
+    "commentID": "articleid-concat number incrementing",
+    "userid": "user-112324134234",
+    "commentBody": "words",
+    "commentLikes": 10
+  },
+  "userid": "user-112324134234",
+  "useremail": "123@gmail.com",
+  "username": "whatever",
+  "password": ""
+}

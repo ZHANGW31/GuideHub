@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuideHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Body -->
+    <!-- Banner and title/description div-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container" id="guide-banner"></div>
+    </div>
+    <!-- Card start-->
+    <div class="container-fluid mb-5">
+      <div class="row" style="margin-top: -75px">
+        <div class="col-md-12 px-lg-5">
+          <!--Card body-->
+          <div class="card pb-5 mx-md-5">
+            <div class="card-body">
+              <div class="container" id="guide-card">
+                <!--Title of Guide start-->
+                <!--Dynamically create h1 tag with the title information from the server-->
+                <!--this -->
+                <h1 class="text-center h1 pt-4 mb-3">Title of Guide</h1>
+                <div class="col-md-12 col-xl-12 d-flex justify-content-center">
+                  <p class="font-small grey-text mb-0 ml-3">
+                    <i class="far fa-clock-o dark-grey-text"></i> last updated
+                    at date/time
+                  </p>
+                </div>
+                <!--Title of Guide end-->
+                <!--Dynamically created content goes below here-->
+                <div class="row pt-lg-6 pt-3">
+                  <div class="col-md-12 col-xl-12">
+                    <div id="guide-container"></div>
+                    <!--Divider between comments and body of guide-->
+                    <hr class="mt-5" />
+                    <!--Divider between comments and body of guide-->
+                    <!--Comments section-->
+                    <section>
+                      <div class="container" id="comment-container">
+                        <!--use comment-container to link scripts-->
+                        <div>
+                          <!--Comments retrieved from the database-->
+                        </div>
+
+                        <div class="form-group">
+                          <label for="comment-section">Leave a Comment</label>
+                          <textarea
+                            class="form-control"
+                            id="comment-section"
+                            rows="3"
+                          ></textarea>
+                          <div class="mt-3"></div>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-lg float-right"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <!--Dynamically created content above-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This will be the main guide page that is created based on guide information-->
+    <!-- The looks and functionality of this page is still to be determined...-->
+    <!-- TODO: Implement a comment section-->
+    <!-- TODO: Implement a rating section-->
+    <!-- TODO: Implement a additional information section-->
+    <!-- Idea: maybe have a column div on the right side that suggests similar guides..-->
+
+    <!-- Scripts Below this comment!-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="mainpage.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

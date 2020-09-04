@@ -1,0 +1,96 @@
+.jumbotron-fluid {
+  background-image: url(/frontend/assets/PeoplePhoto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+.jumbotron-fluid h1 {
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  color: black;
+}
+.jumbotron-fluid p {
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  color: black;
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+}
+.btn-outline-success {
+  color: black !important;
+  border-color: #056676 !important;
+}
+.btn-outline-success:hover {
+  background-color: #056676 !important;
+  color: white !important;
+}
+#navbarSupportedContent {
+  display: flex;
+  justify-content: center !important;
+}
+#home-btn {
+  margin-right: 10px;
+  box-shadow: none !important;
+}
+.form-inline {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.card-container {
+  margin-left: auto;
+  margin-bottom: 5%;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  background: #e8ded2;
+  margin-bottom: 60px;
+}
+.card-container ul {
+  column-count: 3;
+  align-items: center;
+}
+.card-container ul li {
+  list-style: none;
+  float: left;
+  width: cover;
+  height: 400px;
+  background: #f8f9fa;
+  margin: 50px 50px 50px 50px;
+}
+.card {
+  width: 20rem;
+  height: 25rem;
+  justify-content: center;
+  text-align: center;
+  border-style: 10px solid !important;
+  border-color: black !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+.card h5 {
+  margin: 10px 10px 40px 10px;
+  color: black;
+}
+.card-body {
+  background-color: #f8f9fa;
+  box-shadow: 10px 5px 5px gray;
+}
+.card-img-top {
+  box-shadow: 10px 7px 5px gray;
+}
+.card-btn {
+  background-color: #f8f9fa !important;
+  border-radius: 0.25rem;
+  border-color: #056676 !important;
+  color: black;
+  overflow: hidden;
+  border-style: solid !important;
+  box-shadow: none;
+  border-image: none;
+  border-radius: 15px;
+}
+.card-btn:hover {
+  background-color: #056676 !important;
+  color: white;
+}
